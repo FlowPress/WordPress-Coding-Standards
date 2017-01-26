@@ -1,5 +1,5 @@
 <?php
-class WordPress-FlowPress_Sniffs_WP_EnqueuedInlineResourcesSniff implements PHP_CodeSniffer_Sniff {
+class FlowPress_Sniffs_WP_EnqueuedInlineResourcesSniff implements PHP_CodeSniffer_Sniff {
 
 	public function register() {
 		return array(
