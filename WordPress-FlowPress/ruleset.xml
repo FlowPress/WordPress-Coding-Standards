@@ -1,6 +1,8 @@
 <?xml version="1.0"?>
-<ruleset name="WordPress-FlowPress">
+<ruleset name="WordPress FlowPress">
 	<description>WordPress Coding Standards - FlowPress</description>
+
+	<rule ref="Generic.PHP.DeprecatedFunctions"/>
 
 	<!-- <rule ref="WordPress-Core"/> -->
 	<!-- <rule ref="WordPress-Docs"/> -->
