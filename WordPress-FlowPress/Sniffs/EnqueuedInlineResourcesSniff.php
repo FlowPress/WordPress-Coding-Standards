@@ -18,10 +18,10 @@ class WordPress_Sniffs_WP_EnqueuedResourcesSniff implements PHP_CodeSniffer_Snif
 		// 	$phpcsFile->addError( 'Stylesheets must be registered/enqueued via wp_enqueue_style', $stackPtr, 'NonEnqueuedStylesheet' );
 		// }
 
-		if ( preg_match( '#<script[^>]*(?<=src=)#', $token['content'] ) > 0 ) {
-			$phpcsFile->addError( 'Scripts must be registered/enqueued via wp_enqueue_script', $stackPtr, 'NonEnqueuedScript' );
-		}
-		var_dump('test');
+		// if ( preg_match( '#<script[^>]*(?<=src=)#', $token['content'] ) > 0 ) {
+			// $phpcsFile->addError( 'Scripts must be registered/enqueued via wp_enqueue_script', $stackPtr, 'NonEnqueuedScript' );
+		// }
+		// var_dump('test');
 
 	} // End process().
 
