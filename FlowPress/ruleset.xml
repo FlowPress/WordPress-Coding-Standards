@@ -4,8 +4,18 @@
 
 	<rule ref="Generic.PHP.DeprecatedFunctions"/>
 
-	<!-- <rule ref="WordPress-Core"/> -->
-	<!-- <rule ref="WordPress-Docs"/> -->
-	<!-- <rule ref="WordPress-Extra"/> -->
-	<!-- <rule ref="WordPress-VIP"/> -->
+	<rule ref="WordPress-Core"/>
+	<rule ref="WordPress-Docs"/>
+	<rule ref="WordPress-Extra"/>
+	<rule ref="WordPress-VIP"/>
+
+	<arg name="tab-width" value="4"/>
+	<rule ref="Generic.WhiteSpace.DisallowSpaceIndent"/>
+	<rule ref="Generic.WhiteSpace.ScopeIndent">
+		<properties>
+			<property name="indent" value="4"/>
+			<property name="tabIndent" value="true"/>
+		</properties>
+	</rule>
+
 </ruleset>
