@@ -15,9 +15,8 @@ class FlowPress_Sniffs_WP_EnqueuedInlineResourcesSniff implements PHP_CodeSniffe
 		$token  = $tokens[ $stackPtr ];
 
 		if ( strpos($token['content'], '<style') !== false ) {
-		// if ( preg_match( '#rel=[\'"]?stylesheet[\'"]?#', $token['content'] ) > 0 ) {
-			$phpcsFile->addError( '123Stylesheets must be registered/enqueued via wp_enqueue_style', $stackPtr, 'NonEnqueuedStylesheet' );
-		}
+
+			$phpcsFile->addError( 'Stylesheets must be registered/enqueued via wp_enqueue_style', $stackPtr, 'NonEnqueuedStylesheet' );
 
 		// if ( preg_match( '#<script[^>]*(?<=src=)#', $token['content'] ) > 0 ) {
 			// $phpcsFile->addError( 'Scripts must be registered/enqueued via wp_enqueue_script', $stackPtr, 'NonEnqueuedScript' );
